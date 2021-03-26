@@ -7,9 +7,9 @@
     "max": 50
   },
   "authentication": {
-    "entity": "walter",
-    "service": "walter",
-    "secret": "tDWikq3diPZ+LkJscpHu2nwDhTI=",
+    "entity": "user",
+    "service": "users",
+    "secret": "0dfTDX5lOYiNXfdsXH4pJBNqtAg=",
     "authStrategies": [
       "jwt",
       "local"
@@ -44,5 +44,5 @@
       }
     }
   },
-  "mongodb": "mongodb://localhost:27017/gserver"
+  "mongodb": "mongodb+srv://weschenbach:losangeles29@tutorialgel.7rqbr.mongodb.net/test"
 }
