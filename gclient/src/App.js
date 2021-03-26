@@ -1,5 +1,10 @@
 import logo from './logo.svg';
+import {feathersApp} from './utils/feathersApp'
 import './App.css';
+
+feathersApp.service('projects').create({
+  name: 'bobby'
+})
 
 function App() {
   return (
