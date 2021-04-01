@@ -16,4 +16,5 @@ module.exports = function (app) {
   const service = app.service('projects');
 
   service.hooks(hooks);
+
 };
