@@ -18,7 +18,7 @@
       "header": {
         "typ": "access"
       },
-      "audience": "https://yourdomain.com",
+      "audience": "https://localhost:3000",
       "issuer": "feathers",
       "algorithm": "HS256",
       "expiresIn": "1d"
@@ -28,7 +28,7 @@
       "passwordField": "password"
     },
     "oauth": {
-      "redirect": "/",
+      "redirect": "http://localhost:3000/login/",
       "google": {
         "key": "<google oauth key>",
         "secret": "<google oauth secret>",
@@ -44,5 +44,5 @@
       }
     }
   },
-  "mongodb": "mongodb+srv://weschenbach:losangeles29@tutorialgel.7rqbr.mongodb.net/test"
+  "mongodb": "mongodb+srv://weschenbach:losangeles29@tutorialgel.7rqbr.mongodb.net/TutorialGel"
 }

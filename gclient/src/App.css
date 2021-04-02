@@ -1,11 +1,5 @@
-.App{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-button{
-  border: solid 1px blue;
-
+.App {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

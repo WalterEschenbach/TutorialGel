@@ -1,25 +1,24 @@
-import {feathersApp} from './utils/feathersApp'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import Signup from './containers/signup/index'
 import './App.css';
 
 
-const createDocument = () => {
-  feathersApp.service('projects').create({
-    text: "helloworld"
-  })
-}
+
 
 
 function App() {
  
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <button onClick={createDocument}>
-          helloworld
-        </button>
-      </header>
-    </div>
+	<div className="App">
+	  <header className="App-header">
+		<Router>
+			<Switch>
+				<Route exact path="/signup" component={Signup} displayName='Sign Up' />
+			</Switch>
+		</Router>
+	  </header>
+	</div>
   );
 }
 
