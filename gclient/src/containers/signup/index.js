@@ -14,8 +14,8 @@ const Signup = props => {
   const classes = useStyles();
   return (
     <div>
-      <Button variant="outlined" href="/login/oauth/github" onClick={createDocument} className={classes.button}>
-          Login with GitHub
+      <Button variant="outlined" href="http://localhost:3000/authentication" onClick={createDocument} className={classes.button}>
+          Login with Google
       </Button>
     </div>
   );

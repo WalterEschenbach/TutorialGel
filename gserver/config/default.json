@@ -28,19 +28,26 @@
       "passwordField": "password"
     },
     "oauth": {
-      "redirect": "http://localhost:3000/login/",
+      "redirect": "http://localhost:3000",
+      "defaults": {
+        "origin" : "http://localhost:3030",
+        "transport" : "session",
+        "state" : true
+      },
       "google": {
-        "key": "<google oauth key>",
-        "secret": "<google oauth secret>",
+        "key": "237926024271-nmr1sdfgukb6ebkdg96vaq0uthjcs6kj.apps.googleusercontent.com",
+        "secret": "b_QxYX4YTpjKHWDuVGpKjMQa",
         "scope": [
+          "openid",
           "email",
-          "profile",
-          "openid"
-        ]
+          "profile"          
+        ],
+        "nonce": true
+     
       },
       "github": {
-        "key": "<github oauth key>",
-        "secret": "<github oauth secret>"
+        "key": "45016e51c78f15abb93e",
+        "secret": "249d6c529420bf46e4fb1e2c9f1315dee20954f8"
       }
     }
   },

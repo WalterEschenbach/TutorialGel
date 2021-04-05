@@ -8,7 +8,7 @@ module.exports = function (app) {
     Model: createModel(app),
     paginate: app.get('paginate')
   };
-
+  console.log('appData', app.services.authentication.strategies)
   // Initialize our service with any options it requires
   app.use('/projects', new Projects(options, app));
 

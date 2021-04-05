@@ -1,10 +1,11 @@
 const mongoose = require('mongoose');
 const logger = require('./logger');
 
-//app.get('mongodb')
-const connectionURL = "mongodb+srv://weschenbach:losangeles29@tutorialgel.7rqbr.mongodb.net/TutorialGel?retryWrites=true&w=majority"
+
 
 module.exports = function (app) {
+  //app.get('mongodb')
+const connectionURL = app.get('mongodb');
   mongoose.connect(
     connectionURL,
     { useCreateIndex: true, useNewUrlParser: true,  useUnifiedTopology: true}
